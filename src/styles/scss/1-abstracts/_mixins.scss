@@ -1,0 +1,57 @@
+ @mixin header-nav-link {
+     color: $white-pinkish-text;
+     border: 1px solid $white-pinkish-text;
+     border-radius: 7px;
+
+     &:hover {
+         color: $white-active-text;
+         border-color: $white-active-text;
+     }
+
+     &:active {
+         color: $white-active-text;
+     }
+ }
+
+ @mixin headerlogged-nav-link {
+     color: $white-pinkish-text;
+     font-size: 1.25rem;
+     text-decoration: none;
+
+     &-active {
+         border-bottom: 1px solid $white-pinkish-text;
+     }
+
+     &:hover {
+         color: $white-active-text;
+     }
+
+     &:active {
+         color: $white-active-text;
+     }
+
+ }
+
+ @mixin messages {
+     background-color: $white-active-text;
+     padding: 2rem;
+     color: $info;
+     border-radius: $rounding;
+     box-shadow: 3px 3px 13px -12px rgba(0, 0, 0, 0.75);
+
+     p {
+         font-size: 1rem;
+         color: $grey-500;
+
+     }
+
+     .user {
+         &-img {
+             width: 5%;
+             height: 5%;
+             border-radius: 50%;
+         }
+     }
+
+
+ }

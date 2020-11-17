@@ -1,0 +1,80 @@
+.chatpage {
+    &-container {
+        position: relative;
+
+        textarea {
+            padding: 20px;
+            width: 100%;
+        }
+
+        button {
+            position: absolute;
+            bottom: 20px;
+            right: 40px;
+            margin-right: 20px;
+            background-color: $secondary;
+            color: $white-active-text;
+            border: 1px solid $secondary;
+            border-radius:$rounding;
+            padding: 5px 10px;
+        }
+    }
+
+    &-search {
+
+        .submit,
+        input {
+            margin-right: 20px;
+            background-color: $secondary;
+            color: $white-active-text;
+            border: 1px solid $secondary;
+            border-radius:$rounding;
+            padding: 5px 10px;
+        }
+
+        input {
+            background-color: $white-active-text;
+            color:$info;
+            padding-left: 20px;
+        }
+        .all{
+            margin-right: 20px;
+            background-color: $white-active-text;
+            color: $secondary;
+            border: 1px solid $secondary;
+            border-radius:$rounding;
+            padding: 5px 10px;
+            text-decoration: none;
+            
+        }
+    }
+
+    ::placeholder {
+        color: $grey-500;
+
+    }
+
+    &-box {
+        background-color: $white-active-text;
+        border-radius:$rounding;
+        border: 1px solid $secondary;
+    }
+
+    &-messages {
+
+        .message {
+            @include messages;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .chatpage {
+        &-search {
+            input {
+                margin-right: 1rem;
+                width: 70%;
+            }
+        }
+    }
+}

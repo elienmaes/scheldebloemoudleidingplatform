@@ -1,0 +1,56 @@
+.homepage {
+    margin-top: 3rem;
+
+    .text-blue {
+        color: $secondary;
+        font-weight: bold;
+        font-size: 2.5rem;
+    }
+
+    .banner {
+        $font-family: "Roboto", sans-serif;
+        font-size: 4rem;
+        font-weight: bold;
+    }
+
+    p {
+        $font-family: "Roboto", sans-serif;
+        font-size: 2rem;
+    }
+
+    &_image {
+        img {
+            width: 100%;
+        }
+    }
+
+    .quote-text {
+        color: $quote-text;
+        font-size: 1.5rem;
+    }
+    .button-group{
+        .center{
+           display:flex;
+           flex-direction: column;
+           align-items: center; 
+        }
+        a{
+            text-decoration: none;
+            color: $white-active-text;
+            border-radius: 10px;
+            background-color: $secondary;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding:0 20px;
+            box-shadow: 1px 1px 13px -4px rgba(0, 0, 0, 0.75);
+        }
+        a:hover{
+            background-color:$blue-900;
+        }
+        .light{
+            margin:0 20px;
+            color: $quote-text;
+        }
+    }
+}

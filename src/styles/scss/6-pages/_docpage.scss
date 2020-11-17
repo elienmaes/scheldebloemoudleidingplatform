@@ -1,0 +1,69 @@
+.docpage{
+    &-info{
+        p {
+            border-radius: $rounding;
+        }
+    }
+    &-container{
+        background-color: $primary;
+        border-radius:$rounding;
+        margin: 0 auto;
+       
+        .text{
+            color: $white-active-text;
+            padding: 20px 0;
+            font-size: 1.5rem;
+        }
+        .fa-upload{
+            color: $white-pinkish-text;
+            
+          
+        }
+        .line{
+            border-bottom: 1px solid $white-pinkish-text;
+            width:100%;
+        }
+        .file-upload{
+           .fa-file-upload {
+               color:$white-active-text;
+                border:1px solid $white-pinkish-text;
+                border-radius:$rounding;
+                display: inline-block;
+                padding: 15px 25px;
+                cursor: pointer;
+           }
+
+            input[type="file"]{
+                display: none;
+            }
+
+            input[type="text"]{
+                margin-top:10px;
+                border-radius:$rounding;
+            }
+            input{
+                padding-left: 5px;
+            }
+            ::placeholder {
+                color: $grey-500;
+                    
+
+            }
+            button{
+                background-color: $white-active-text;
+                color: $primary;
+                border:1px solid $white-pinkish-text;
+                border-radius:$rounding;
+                 padding:5px 10px;
+            }
+            
+        }
+        
+    }
+    &-docs{
+        img{
+            width:100%;
+            border-radius:$rounding;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+footer {
+    background-color: $primary;
+
+    img {
+        width: 6em;
+    }
+    .icons{
+        color: $white-active-text;
+        i{
+            margin-left:1rem;
+            &:hover{
+                color:$white-pinkish-text;
+            }
+        }
+        
+    }
+    .legal{
+        text-align: center;
+        color:$white-pinkish-text
+    }
+}

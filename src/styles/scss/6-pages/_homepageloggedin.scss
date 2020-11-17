@@ -1,0 +1,62 @@
+.homepage {
+    &-activity {
+        background-color: $primary;
+        width: 40%;
+        padding: 5%;
+        border-radius:$rounding;
+
+        .big-p {
+            font-weight: 400;
+            font-size: 3rem;
+            margin-bottom: -0.50rem;
+        }
+
+        .medium-p,
+        .medium-up {
+            font-weight: 400;
+            font-size: 1.5rem;
+        }
+        .medium-up {
+            text-transform: uppercase;
+        }
+
+        .small-p {
+            font-weight: 400;
+            font-size: 1rem;
+            margin-bottom: -0.10rem;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 1.5rem;
+        }
+    }
+
+    &-light {
+        background-color: $primary-100;
+    }
+    &-messages{
+        background-color: rgba(36,89,235,21%);
+        padding:1rem 2rem;
+        margin-right:-3rem;
+        border-radius:$rounding;
+        height:67.5rem;
+        .message{
+            background-color: $secondary;
+            padding:2rem;
+            color:$white-active-text;
+            border-radius:$rounding;
+            p{
+                font-size: 1rem;
+            }
+            .user {
+                &-img {
+                    width: 5%;
+                    height: 5%;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+
+}
